@@ -1,0 +1,5 @@
+%{ for vhost in vhosts ~}
+${vhost}:80 {
+    respond "This is vhost ${vhost}\n"
+}
+%{ endfor ~}
